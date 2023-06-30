@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-family: roboto;
+	background-color: #cecece;
+	background-image: url("./assets/bg2.jpg");
+}
