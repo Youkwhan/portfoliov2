@@ -21,7 +21,7 @@ header {
 		h1 {
 			font-size: 1.125rem;
 			i {
-				background: linear-gradient(#8d86b5, #90a0f2);
+				background: linear-gradient(var(--clr-i), var(--clr-ii));
 				-webkit-background-clip: text;
 				background-clip: text;
 				color: transparent;

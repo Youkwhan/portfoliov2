@@ -1,0 +1,60 @@
+.home {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 0.75em;
+	flex: 1;
+
+	.details {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		.intro {
+			font-size: 1rem;
+			margin-left: 6px;
+		}
+
+		.name {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-family: "Raleway", sans-serif;
+
+			.txt {
+				font-size: 7rem;
+				line-height: 140px;
+				text-align: left;
+
+				&.sm {
+					font-size: 6.5rem;
+					filter: drop-shadow(0 6px 0 #766fa0);
+					background: linear-gradient(var(--clr-i), var(--clr-ii));
+					-webkit-background-clip: text;
+					background-clip: text;
+					color: transparent;
+				}
+			}
+
+			.developer {
+				position: absolute;
+				bottom: 20px;
+				left: 230px;
+				transform-origin: right;
+				rotate: 90deg;
+				white-space: nowrap;
+
+				b {
+					background: linear-gradient(var(--clr-i), var(--clr-ii));
+					-webkit-background-clip: text;
+					background-clip: text;
+					color: transparent;
+				}
+			}
+		}
+	}
+}
