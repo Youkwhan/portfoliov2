@@ -1,4 +1,5 @@
 import "./Home.scss"
+import profile from "../../assets/profile.jpg"
 
 function Home() {
 	return (
@@ -17,7 +18,9 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="profile-img"></div>
+			<div className="profile-img">
+				<img src={profile} alt="profile" />
+			</div>
 		</div>
 	)
 }
