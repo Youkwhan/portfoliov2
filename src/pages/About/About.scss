@@ -1,0 +1,43 @@
+.about {
+	display: flex;
+	width: 100%;
+	flex: 1;
+	align-items: center;
+
+	.name {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-family: "Raleway", sans-serif;
+
+		.txt {
+			font-size: 7rem;
+			line-height: 140px;
+			text-align: center;
+
+			&.lg {
+				font-size: 15.6rem;
+				line-height: 190px;
+				filter: drop-shadow(0 6px 0 #766fa0);
+				background: linear-gradient(var(--clr-i), var(--clr-ii));
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+			}
+		}
+      
+		.me {
+			position: absolute;
+			bottom: 5px;
+			right: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			background: linear-gradient(var(--clr-i), var(--clr-ii));
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+	}
+}
