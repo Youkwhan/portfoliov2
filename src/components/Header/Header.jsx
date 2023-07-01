@@ -17,6 +17,23 @@ function Header() {
 		}
 
 		update()
+
+		navLinks.forEach((link) => {
+			link.addEventListener("click", () => {
+				// remove active class
+				navLinks.forEach((link) => {
+					link.classList.remove("active")
+				})
+				// set new indicator
+				let width = link.offsetWidth,
+					left = link.offsetLeft
+
+				indicator.style.width = `${width + 28}px`
+				indicator.style.left = `${left}px`
+				// add new active link-item
+				link.classList.add("active")
+			})
+		})
 	}, [])
 
 	return (
