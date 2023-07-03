@@ -10,8 +10,8 @@ function Project({ projectName, projectDesc, tags, img }) {
 				<div className="tags">
 					<h2 className="tech-stack">Technologies Used:</h2>
 					<div className="tags-wrapper">
-						{tags?.map((tag) => {
-							return <Tag title={tag} key={projectName} />
+						{tags?.map((tag, i) => {
+							return <Tag title={tag} key={`${projectName}-${i}`} />
 						})}
 					</div>
 				</div>

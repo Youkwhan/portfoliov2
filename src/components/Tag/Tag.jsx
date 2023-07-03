@@ -1,6 +1,6 @@
-function Tag({ title, key }) {
+function Tag({ title }) {
 	return (
-		<div key={key} className="tag">
+		<div className="tag">
 			<h2 className="title">{title}</h2>
 		</div>
 	)

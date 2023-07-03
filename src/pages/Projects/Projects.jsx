@@ -11,13 +11,13 @@ function Projects() {
 				img=""
 			/>
 			<Project
-				projectName="sad"
+				projectName="qwe"
 				projectDesc="des"
 				tags={["React", "HTML"]}
 				img=""
 			/>
 			<Project
-				projectName="sad"
+				projectName="asdasf"
 				projectDesc="des"
 				tags={["React", "HTML"]}
 				img=""
