@@ -10,6 +10,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .App {
 	min-height: 100vh;
 	display: flex;
@@ -49,9 +53,19 @@
 				font-size: 18px;
 			}
 
-			.socials{
+			.socials {
 				display: flex;
 			}
 		}
 	}
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 100px;
+	background-color: rgb(26, 26, 26);
 }
