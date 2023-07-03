@@ -1,4 +1,4 @@
-.project-wrapper {
+.projects-wrapper {
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -6,4 +6,5 @@
 	margin: auto;
 	gap: 100px;
 	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 }
