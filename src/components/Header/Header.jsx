@@ -28,8 +28,8 @@ function Header() {
 				let width = link.offsetWidth,
 					left = link.offsetLeft
 
-				indicator.style.width = `${width + 28}px`
 				indicator.style.left = `${left}px`
+				indicator.style.width = `${width + 28}px`
 				// add new active link-item
 				link.classList.add("active")
 			})
