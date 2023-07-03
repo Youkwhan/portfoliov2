@@ -1,5 +1,3 @@
-import "./InfoCard.scss"
-
 function InfoCard({ title, details }) {
 	return (
 		<div className="info-card">
