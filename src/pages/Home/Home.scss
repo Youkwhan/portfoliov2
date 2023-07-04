@@ -1,11 +1,11 @@
 .home {
 	position: relative;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	margin-top: 0.75em;
 	flex: 1;
-	gap: 2rem;
+	// gap: 2rem;
 	width: 100%;
 
 	.details {
@@ -13,7 +13,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
-		padding-right: 2rem;
+		padding-right: 2.5rem;
 
 		translate: -90px;
 		opacity: 0;
@@ -28,7 +28,7 @@
 
 		.intro {
 			font-size: 1rem;
-			margin-left: 6px;
+			margin-left: 0.375em;
 		}
 
 		.name {
@@ -78,7 +78,7 @@
 		justify-content: center;
 		align-items: center;
 
-		width: 35%;
+		width: 50%;
 		aspect-ratio: 1;
 		background-color: var(--clr-i);
 		border-radius: 30px;
@@ -98,6 +98,46 @@
 			&:hover {
 				scale: 1.02;
 			}
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.home {
+		flex-direction: column;
+		margin-top: 2em;
+
+		.details {
+			translate: 0 -90px;
+
+			.name {
+				flex-direction: row;
+
+				.txt {
+					font-size: 6.5rem;
+					line-height: 100px;
+					padding-top: 0.2em;
+
+					&:nth-child(1) {
+						margin-bottom: 0.5em;
+					}
+
+					&.sm {
+						font-size: 6.5rem;
+					}
+				}
+
+				.developer {
+					rotate: 0deg;
+					font-size: 14px;
+					// left: 50%;
+					// translate: -50%;
+				}
+			}
+		}
+		.profile-img {
+			width: 100%;
+			translate: 0 -80px;
 		}
 	}
 }
