@@ -39,7 +39,7 @@ html {
 			width: 70%;
 		}
 
-		.socials-wrapper {
+		.tech-wrapper {
 			position: relative;
 			width: 100%;
 			display: flex;
@@ -48,13 +48,16 @@ html {
 			justify-content: center;
 			gap: 20px;
 
-			.quick-links {
-				font-weight: 500;
-				font-size: 18px;
+			.tech-links {
+				font-weight: 600;
+				font-size: 1.5rem;
 			}
 
-			.socials {
+			.techstacks {
 				display: flex;
+				flex-wrap: wrap;
+				max-width: 800px;
+				justify-content: space-evenly;
 			}
 		}
 	}

@@ -2,12 +2,20 @@ import "./App.scss"
 import Header from "./components/Header/Header"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
+import Techstack from "./components/Tag/Techstack"
 import Social from "./components/Social/Social"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
 
-import github from "./assets/github.png"
-import linkedin from "./assets/linkedin.png"
+import python from "./assets/python.png"
+import html from "/html5-colored.svg"
+import css from "/css3-colored.svg"
+import sass from "/sass-colored.svg"
+import javascript from "/javascript-colored.svg"
+import react from "/react-colored.svg"
+import reactrouter from "/react-router-colored.svg"
+import vite from "/vite-colored.svg"
+import firebase from "/firebase-colored.svg"
 import { useEffect } from "react"
 
 function App() {
@@ -62,12 +70,19 @@ function App() {
 				<div className="page" id="about">
 					<About />
 				</div>
-				<div className="socials-wrapper">
-					<h2 className="quick-links">Quick Links</h2>
+				<div className="tech-wrapper">
+					<h2 className="tech-links">Tech Stack</h2>
 
-					<div className="socials">
-						<Social logo={github} title="GitHub" />
-						<Social logo={linkedin} title="Linkedin" />
+					<div className="techstacks">
+						<Techstack logo={python} title="Python" />
+						<Techstack logo={html} title="HTML" />
+						<Techstack logo={css} title="CSS" />
+						<Techstack logo={javascript} title="JavaScript" />
+						<Techstack logo={react} title="React" />
+						<Techstack logo={reactrouter} title="react-router" />
+						<Techstack logo={sass} title="Sass" />
+						<Techstack logo={firebase} title="Firebase" />
+						<Techstack logo={vite} title="Vite" />
 					</div>
 				</div>
 				<div className="page" id="projects">

@@ -1,0 +1,28 @@
+.techstack {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	// background: linear-gradient(45deg, var(--clr-i), var(--clr-ii));
+	background-color: #33363a;
+	padding: 0.525em 0.838em;
+	border-radius: 30px;
+	margin: 0.625em;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.274));
+	transition: scale ease;
+
+	&:hover{
+		scale: 1.02
+	}
+
+	img {
+		height: 40px;
+	}
+
+	h2 {
+		font-size: 1.125rem;
+		font-weight: 500;
+		color: #fff;
+		font-family: "Raleway", sans-serif;
+	}
+
+}
