@@ -7,11 +7,11 @@ function About() {
 			<div className="name">
 				<div>
 					<h1 className="txt">
-						AB <br />
-						OU
+						AB
+						<span id="break">OU</span>
 					</h1>
 				</div>
-				<h1 className="txt lg">T</h1>
+				<h2 className="txt lg">T</h2>
 
 				<div className="me">ME</div>
 			</div>
@@ -26,7 +26,7 @@ function About() {
 				Velit laboriosam ducimus nostrum sequi vel veniam eligendi soluta
 				exercitationem? Recusandae, ipsa numquam."
 				/>
-            <InfoCard
+				<InfoCard
 					title="Education"
 					details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
 				debitis, soluta voluptatem architecto nesciunt odio consequuntur eos, ad
@@ -35,7 +35,7 @@ function About() {
 				Velit laboriosam ducimus nostrum sequi vel veniam eligendi soluta
 				exercitationem? Recusandae, ipsa numquam."
 				/>
-            <InfoCard
+				<InfoCard
 					title="Skills"
 					details="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
 				debitis, soluta voluptatem architecto nesciunt odio consequuntur eos, ad
