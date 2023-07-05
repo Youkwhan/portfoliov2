@@ -72,11 +72,23 @@
 				}
 			}
 		}
-		.my-links{
+		.my-links {
 			display: flex;
 			align-items: center;
 			font-size: 2rem;
 			gap: 1rem;
+			filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.377));
+			
+			& > * {
+				transition: 0.3 ease-in;
+				cursor: pointer;
+				list-style: none;
+				color: black;
+
+				&:hover {
+					transform: translateY(5px);
+				}
+			}
 		}
 	}
 
@@ -91,7 +103,6 @@
 		background-color: var(--clr-i);
 		border-radius: 50%;
 		overflow: hidden;
-		cursor: pointer;
 		filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.377));
 		translate: -100px;
 		opacity: 0;
@@ -142,6 +153,10 @@
 					// left: 50%;
 					// translate: -50%;
 				}
+			}
+
+			.my-links{
+				margin-bottom: 1em;
 			}
 		}
 		.profile-img {

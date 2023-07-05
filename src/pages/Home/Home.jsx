@@ -21,10 +21,18 @@ function Home() {
 					</div>
 				</div>
 				<div className="my-links">
-					<BiLogoLinkedinSquare />
-					<BiLogoGithub />
-					<AiOutlineMail />
-					<BsFillFileEarmarkPersonFill />
+					<a href="https://www.linkedin.com/in/youkwhan/" target="_blank">
+						<BiLogoLinkedinSquare />
+					</a>
+					<a href="https://github.com/Youkwhan" target="_blank">
+						<BiLogoGithub />
+					</a>
+					<a href="mailto:Youkwhan@gmail.com">
+						<AiOutlineMail />
+					</a>
+					<a href="" target="_blank">
+						<BsFillFileEarmarkPersonFill />
+					</a>
 				</div>
 			</div>
 			<div className="profile-img">
