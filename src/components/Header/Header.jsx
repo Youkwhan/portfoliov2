@@ -58,7 +58,10 @@ function Header() {
 						<a href="#projects">PROJECTS</a>
 					</li>
 					<li>
-						<a href="#contact">GET IN TOUCH</a>
+						<a href="#contact">CONTACT</a>
+					</li>
+					<li>
+						<a href="#contact">RESUME</a>
 					</li>
 				</ul>
 			</nav>
