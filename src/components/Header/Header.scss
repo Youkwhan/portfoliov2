@@ -8,6 +8,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-image: url("../../assets/bg2.jpg");
+	border-bottom: 1px solid #ffffff;;
 
 	.logo {
 		display: flex;
@@ -35,6 +36,7 @@ header {
 		ul {
 			position: relative;
 			display: flex;
+			justify-content: center;
 			align-items: center;
 			list-style: none;
 			gap: 2rem;
