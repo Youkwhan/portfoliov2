@@ -8,9 +8,8 @@ function Project({ projectName, projectDesc, tags, img }) {
 				<h2 className="project-name">{projectName}</h2>
 				<span className="project-desc">{projectDesc}</span>
 
-				<div className="tags">
-					<h2 className="tech-stack">Technologies Used:</h2>
-					<div className="tags-wrapper">
+				<div className="skills-section">
+					<div className="skills">
 						{tags?.map((tag, i) => {
 							return <Tag title={tag} key={`${projectName}-${i}`} />
 						})}

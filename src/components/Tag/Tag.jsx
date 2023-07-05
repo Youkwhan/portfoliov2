@@ -1,7 +1,7 @@
 function Tag({ title }) {
 	return (
-		<div className="tag">
-			<h2 className="title">{title}</h2>
+		<div className="skill">
+			<p className="language">{title}</p>
 		</div>
 	)
 }

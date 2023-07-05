@@ -5,9 +5,9 @@ function Projects() {
 	return (
 		<div className="projects-wrapper">
 			<Project
-				projectName="sad"
+				projectName="Vanlife"
 				projectDesc="des"
-				tags={["React", "HTML"]}
+				tags={["React", "react-router", "JavaScript", "CSS", "Firebase", "Mirage.js"]}
 				img=""
 			/>
 			<Project

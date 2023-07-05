@@ -25,35 +25,71 @@
 			color: var(--clr-i);
 		}
 
-		.tags {
-			margin-top: 90px;
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
+		.skills-section {
+			margin-bottom: 1rem;
 
-			.tech-stack {
-				font-size: 18px;
+			& > .skills {
+				display: flex;
+				justify-content: center;
+				margin: 1em auto;
 			}
 
-			.tags-wrapper {
+			.skills {
+				width: 100%;
+				/* margin: 1em 0; */
 				display: flex;
-				gap: 5px;
+				align-items: center;
+				justify-content: left;
 				flex-wrap: wrap;
 
-				.tag {
-					padding: 0 15px;
+				.skill {
+					height: 22px;
+					line-height: 22px;
 					border-radius: 8px;
-					height: 35px;
-					background: linear-gradient(var(--clr-i), var(--clr-ii));
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
+					padding: 0 8px;
+					margin: 5px 8px 5px 0;
 
-				.title {
-					font-weight: normal;
-					font-size: 17px;
-					color: #fff;
+					font-weight: 400;
+					font-size: 1rem;
+
+					transition: 50ms ease-out;
+					cursor: default;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					position: relative;
+					top: 0;
+
+					&:hover {
+						top: -2px;
+					}
+
+					p{
+						padding: 2px 5px;
+					}
+
+					.language {
+						background: #ffeeef;
+						color: #e43d45;
+						border: 1px solid #e43d45;
+						border-radius: 10px;
+					}
+
+					.library-framework {
+						background: #e8f8ff;
+						color: #2da3da;
+					}
+
+					.other {
+						background: #e2ffdf;
+						color: #2e9450;
+					}
+
+					.database {
+						background: #f0edff;
+						color: #7056e0;
+					}
 				}
 			}
 		}
@@ -97,19 +133,6 @@
 		.project-details {
 			width: 100%;
 			align-items: center;
-
-			.tags {
-				margin-top: 40px;
-				align-items: center;
-
-				.tags-wrapper {
-					justify-content: space-between;
-
-					.tag {
-						border-radius: 100px;
-					}
-				}
-			}
 		}
 
 		.project-images {
