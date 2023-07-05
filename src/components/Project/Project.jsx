@@ -7,6 +7,7 @@ function Project({ projectName, projectDesc, tags, img }) {
 			<div className="project-details">
 				<h2 className="project-name">{projectName}</h2>
 				<span className="project-desc">{projectDesc}</span>
+
 				<div className="tags">
 					<h2 className="tech-stack">Technologies Used:</h2>
 					<div className="tags-wrapper">
@@ -16,8 +17,9 @@ function Project({ projectName, projectDesc, tags, img }) {
 					</div>
 				</div>
 			</div>
+
 			<div className="project-image">
-				{/* <img src={img} alt="project-img" /> */}
+				<div className="img">{/* <img src={img} alt="project-img" /> */}</div>
 			</div>
 		</div>
 	)

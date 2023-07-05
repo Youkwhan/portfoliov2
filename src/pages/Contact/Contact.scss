@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-	padding-top: 3.125em;
+	margin-top: 10em; // REDUCE ONCE WE HAVE MORE  CONTENT HERE
 
 	h2 {
 		font-size: 2.5rem;
@@ -35,5 +35,34 @@
 	footer {
 		margin-top: 50px;
 		text-align: center;
+		background-color: teal;
+	}
+}
+
+@media (max-width: 650px) {
+	.contact {
+		margin-top: 1.25em;
+
+		span {
+			max-width: 100%;
+		}
+
+		.socials {
+			margin: auto 0;
+
+			.social {
+				margin: 0.5em;
+				padding: 0.625em 0.75em;
+				gap: 5px;
+
+				h2 {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		footer {
+			margin-top: 0;
+		}
 	}
 }

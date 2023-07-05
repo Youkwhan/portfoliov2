@@ -8,7 +8,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-image: url("../../assets/bg2.jpg");
-	border-bottom: 1px solid #ffffff;;
+	border-bottom: 1px solid #ffffff;
 
 	.logo {
 		display: flex;
@@ -84,8 +84,18 @@ header {
 			transition: 0.3s ease;
 		}
 
-		&.active img{
+		&.active img {
 			translate: 0;
 		}
+	}
+}
+
+@media (max-width: 700px) {
+	header {
+		padding: 10px 10px;
+	}
+
+	nav {
+		display: none;
 	}
 }
