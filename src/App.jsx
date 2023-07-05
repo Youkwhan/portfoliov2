@@ -3,9 +3,9 @@ import Header from "./components/Header/Header"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Techstack from "./components/Tag/Techstack"
-import Social from "./components/Social/Social"
 import Projects from "./pages/Projects/Projects"
 import Contact from "./pages/Contact/Contact"
+import Nav from "./components/Nav/Nav"
 
 import python from "./assets/python.png"
 import html from "/html5-colored.svg"
@@ -24,6 +24,8 @@ function App() {
 		const indicator = document.querySelector("nav .indicator")
 		const profile = document.querySelector(".profile")
 		const pages = document.querySelectorAll(".page")
+
+		const navIcons = document.querySelectorAll(".nav-toggle .nav-icon")
 
 		function handleScroll() {
 			let homeBottom = pages[0].getBoundingClientRect().bottom
@@ -52,6 +54,12 @@ function App() {
 
 					indicator.style.width = `${width + 28}px`
 					indicator.style.left = left + "px"
+
+					navIcons.forEach((icon) => {
+						icon.classList.remove("active")
+					})
+
+					navIcons[i].classList.add("active")
 				}
 			}
 		}
@@ -63,13 +71,17 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
+			<Nav />
+
 			<main>
 				<div className="page" id="home">
 					<Home />
 				</div>
+
 				<div className="page" id="about">
 					<About />
 				</div>
+
 				<div className="tech-wrapper">
 					<h2 className="tech-links">Tech Stack</h2>
 
@@ -85,9 +97,11 @@ function App() {
 						<Techstack logo={vite} title="Vite" />
 					</div>
 				</div>
+
 				<div className="page" id="projects">
 					<Projects />
 				</div>
+
 				<div className="page" id="contact">
 					<Contact />
 				</div>
