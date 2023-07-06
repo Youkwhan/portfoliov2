@@ -7,7 +7,14 @@ function Projects() {
 			<Project
 				projectName="Vanlife"
 				projectDesc="des"
-				tags={["React", "react-router", "JavaScript", "CSS", "Firebase", "Mirage.js"]}
+				tags={[
+					["JavaScript", "language"],
+					["CSS", "language"],
+					["React", "library-framework"],
+					["react-router", "other"],
+					["Mirage.js", "other"],
+					["Firebase", "database"],
+				]}
 				img=""
 			/>
 			<Project
