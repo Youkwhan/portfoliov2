@@ -6,7 +6,7 @@ function Projects() {
 		<div className="projects-wrapper">
 			<Project
 				projectName="Vanlife"
-				projectDesc="des"
+				projectDesc="Welcome to our rental website, where you can find the perfect travel van for your next road trip adventure. Whether you're looking to host your own van or discover and rent a new one, we've got you covered!"
 				tags={[
 					["JavaScript", "language"],
 					["CSS", "language"],
@@ -16,6 +16,8 @@ function Projects() {
 					["Firebase", "database"],
 				]}
 				img=""
+				github=""
+				link=""
 			/>
 			<Project
 				projectName="qwe"
