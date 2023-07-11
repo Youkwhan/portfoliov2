@@ -16,24 +16,9 @@
 		text-align: center;
 		margin-top: 1.25em;
 
-		span{
+		span {
 			font-weight: 500;
 			color: var(--clr-ii);
-		}
-	}
-
-	.socials {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 6.25em 0;
-		justify-content: center;
-
-		.social {
-			background: #1a1a1a;
-
-			h2 {
-				font-size: 1.25rem;
-			}
 		}
 	}
 
@@ -41,6 +26,21 @@
 		margin-top: 50px;
 		text-align: center;
 		background-color: teal;
+
+		.socials {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 6.25em 0;
+			justify-content: center;
+
+			.social {
+				background: #1a1a1a;
+
+				h2 {
+					font-size: 1.25rem;
+				}
+			}
+		}
 	}
 }
 
@@ -48,26 +48,22 @@
 	.contact {
 		margin-top: 1.25em;
 
-		span {
-			max-width: 100%;
-		}
-
-		.socials {
-			margin: auto 0;
-
-			.social {
-				margin: 0.5em;
-				padding: 0.625em 0.75em;
-				gap: 5px;
-
-				h2 {
-					font-size: 1rem;
-				}
-			}
-		}
-
 		footer {
 			margin-top: 0;
+
+			.socials {
+				margin: auto 0;
+
+				.social {
+					margin: 0.5em;
+					padding: 0.625em 0.75em;
+					gap: 5px;
+
+					h2 {
+						font-size: 1rem;
+					}
+				}
+			}
 		}
 	}
 }
