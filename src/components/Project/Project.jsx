@@ -12,7 +12,6 @@ function Project({ projectName, projectDesc, tags, img, github, link }) {
 				<div className="skills-section">
 					<div className="skills">
 						{tags?.map((tag, i) => {
-							console.log(tag)
 							return <Tag title={tag} key={`${projectName}-${i}`} />
 						})}
 					</div>
