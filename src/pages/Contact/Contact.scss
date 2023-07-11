@@ -5,16 +5,21 @@
 	justify-content: center;
 	align-items: center;
 	flex: 1;
+	gap: 1rem;
 	margin-top: 10em; // REDUCE ONCE WE HAVE MORE  CONTENT HERE
 
 	h2 {
 		font-size: 2.5rem;
 	}
 
-	span {
-		max-width: 60%;
+	p {
 		text-align: center;
 		margin-top: 1.25em;
+
+		span{
+			font-weight: 500;
+			color: var(--clr-ii);
+		}
 	}
 
 	.socials {

@@ -1,5 +1,6 @@
 import "./Home.scss"
 import profile from "../../assets/profile.jpg"
+import resume from "../../assets/You-Kwhan Kim.pdf"
 import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi"
 import { AiOutlineMail } from "react-icons/ai"
 import { BsFillFileEarmarkPersonFill } from "react-icons/bs"
@@ -30,7 +31,7 @@ function Home() {
 					<a href="mailto:Youkwhan@gmail.com">
 						<AiOutlineMail />
 					</a>
-					<a href="" target="_blank">
+					<a href={resume} target="_blank">
 						<BsFillFileEarmarkPersonFill />
 					</a>
 				</div>

@@ -1,6 +1,7 @@
 import "./Header.scss"
 import logo from "../../assets/logo.png"
 import profile from "../../assets/profile.jpg"
+import resume from "../../assets/You-Kwhan Kim.pdf"
 import { useEffect } from "react"
 
 function Header() {
@@ -61,7 +62,9 @@ function Header() {
 						<a href="#contact">CONTACT</a>
 					</li>
 					<li>
-						<a href="#contact">RESUME</a>
+						<a href={resume} target="_blank">
+							RESUME
+						</a>
 					</li>
 				</ul>
 			</nav>

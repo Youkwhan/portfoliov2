@@ -16,20 +16,47 @@ function Projects() {
 					["Firebase", "database"],
 				]}
 				img=""
-				github=""
-				link=""
+				github="https://github.com/Youkwhan/vanlife"
+				link="https://boisterous-gumption-10ba88.netlify.app/"
 			/>
 			<Project
-				projectName="qwe"
-				projectDesc="des"
-				tags={["React", "HTML"]}
+				projectName="Quizzical"
+				projectDesc="Quizzical is the ultimate online trivia quiz designed to test your knowledge across a variety of categories. With Quizzical, players can engage in a fun and challenging experience, answering 5 random questions at a time."
+				tags={[
+					["JavaScript", "language"],
+					["CSS", "language"],
+					["React", "library-framework"],
+					["Figma", "other"],
+				]}
 				img=""
+				github="https://github.com/Youkwhan/quizzical"
+				link="https://harmonious-begonia-821825.netlify.app/"
 			/>
 			<Project
-				projectName="asdasf"
-				projectDesc="des"
-				tags={["React", "HTML"]}
+				projectName="Notes App"
+				projectDesc="The Notes App aims to provide users with a convenient and feature-rich markdown editor for creating and organizing their notes. The app allows users to write and format their notes using markdown syntax and provides a live preview of the rendered content."
+				tags={[
+					["CSS", "language"],
+					["React", "library-framework"],
+					["Firebase", "database"],
+				]}
 				img=""
+				github="https://github.com/Youkwhan/notes-app"
+				link="https://meek-malabi-f59af4.netlify.app/"
+			/>
+			<Project
+				projectName="Movie Watchlist"
+				projectDesc="Movie Watchlist is a website that allows users to keep track and add movies, TV shows, and more to their own personalized watchlist and remove them as you finish. It uses the Open Movie Database (OMDb) API to search movie data by title, name, or id."
+				tags={[
+					["JavaScript", "language"],
+					["CSS", "language"],
+					["React", "library-framework"],
+					["REST API", "other"],
+					["Figma", "other"],
+				]}
+				img=""
+				github="https://github.com/Youkwhan/watchlist"
+				link="https://watchlist-bookmark.netlify.app/"
 			/>
 		</div>
 	)
