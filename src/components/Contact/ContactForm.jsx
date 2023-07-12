@@ -56,6 +56,7 @@ function ContactForm() {
 						type="text"
 						placeholder="Your name"
 						name="name"
+						className="form-input"
 						{...register("name", {
 							required: { value: true, message: "Please enter your name" },
 							maxLength: {
@@ -74,6 +75,7 @@ function ContactForm() {
 						type="email"
 						placeholder="Email"
 						name="email"
+						className="form-input"
 						{...register("email", {
 							required: true,
 							pattern:
@@ -92,6 +94,7 @@ function ContactForm() {
 						type="text"
 						name="subject"
 						placeholder="Subject"
+						className="form-input"
 						{...register("subject", {
 							required: { value: true, message: "Please enter a subject" },
 							maxLength: {
@@ -109,6 +112,7 @@ function ContactForm() {
 					<textarea
 						placeholder="Your message"
 						name="message"
+						className="form-input"
 						rows={3}
 						{...register("message", {
 							required: true,

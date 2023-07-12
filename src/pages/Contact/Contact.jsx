@@ -2,8 +2,7 @@ import "./Contact.scss"
 import Social from "../../components/Social/Social"
 import ContactForm from "../../components/Contact/ContactForm"
 
-import github from "../../assets/github.png"
-import linkedin from "../../assets/linkedin.png"
+import { BiColor, BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi"
 
 function Contact() {
 	return (
@@ -17,9 +16,16 @@ function Contact() {
 				<ContactForm />
 			</div>
 			<footer>
-				<div className="socials">
-					<Social logo={github} title="GitHub" />
-					<Social logo={linkedin} title="Linkedin" />
+				<div className="my-links">
+					<a href="https://github.com/Youkwhan" target="_blank">
+						<BiLogoGithub />
+					</a>
+					<a href="https://www.linkedin.com/in/youkwhan/" target="_blank">
+						<BiLogoLinkedinSquare />
+					</a>
+				</div>
+				<div className="footer-note">
+					Designed & built by <span style={{color:"#90a0f2"}}>You Kwhan Kim</span> &#169; 2023
 				</div>
 			</footer>
 		</div>
