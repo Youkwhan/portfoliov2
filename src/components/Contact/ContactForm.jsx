@@ -3,6 +3,10 @@ import emailjs from "emailjs-com"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.min.css"
 
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
 function ContactForm() {
 	const {
 		register,
@@ -36,12 +40,7 @@ function ContactForm() {
 				subject,
 				message,
 			}
-			await emailjs.send(
-				process.env.REACT_APP_SERVICE_ID,
-				process.env.REACT_APP_TEMPLATE_ID,
-				templateParams,
-				process.env.REACT_APP_PUBLIC_KEY
-			)
+			await emailjs.send(serviceId, templateId, templateParams, publicKey)
 			reset()
 			toastifySuccess()
 		} catch (e) {
