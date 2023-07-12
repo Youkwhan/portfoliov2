@@ -1,5 +1,8 @@
 import Project from "../../components/Project/Project"
 import "./Projects.scss"
+import quizzicalVideo from "../../assets/projects/quizzical.mp4"
+import watchlistVideo from "../../assets/projects/movie-watchlist.mp4"
+import notesVideo from "../../assets/projects/notes-app.mp4"
 
 function Projects() {
 	return (
@@ -28,7 +31,7 @@ function Projects() {
 					["React", "library-framework"],
 					["Figma", "other"],
 				]}
-				img=""
+				img={quizzicalVideo}
 				github="https://github.com/Youkwhan/quizzical"
 				link="https://harmonious-begonia-821825.netlify.app/"
 			/>
@@ -40,7 +43,7 @@ function Projects() {
 					["React", "library-framework"],
 					["Firebase", "database"],
 				]}
-				img=""
+				img={notesVideo}
 				github="https://github.com/Youkwhan/notes-app"
 				link="https://meek-malabi-f59af4.netlify.app/"
 			/>
@@ -54,7 +57,7 @@ function Projects() {
 					["REST API", "other"],
 					["Figma", "other"],
 				]}
-				img=""
+				img={watchlistVideo}
 				github="https://github.com/Youkwhan/watchlist"
 				link="https://watchlist-bookmark.netlify.app/"
 			/>

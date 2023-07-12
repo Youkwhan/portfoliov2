@@ -33,7 +33,7 @@ function Project({ projectName, projectDesc, tags, img, github, link }) {
 			</div>
 
 			<div className="project-image">
-				<div className="img">{/* <img src={img} alt="project-img" /> */}</div>
+				<div className="img"><img src={img} alt="project-img" /></div>
 			</div>
 		</div>
 	)
