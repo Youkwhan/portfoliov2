@@ -2,7 +2,7 @@ import "./Project.scss"
 import Tag from "../Tag/Tag"
 import { BiLogoGithub, BiLink } from "react-icons/bi"
 
-function Project({ projectName, projectDesc, tags, img, github, link }) {
+function Project({ projectName, projectDesc, tags, img, github, link, vid }) {
 	return (
 		<div className="project">
 			<div className="project-details">
@@ -17,15 +17,11 @@ function Project({ projectName, projectDesc, tags, img, github, link }) {
 					</div>
 				</div>
 				<div className="my-links">
-					<a
-						href="https://github.com/Youkwhan"
-						target="_blank"
-						className="link"
-					>
+					<a href={github} target="_blank" className="link">
 						Code
 						<BiLogoGithub />
 					</a>
-					<a className="link">
+					<a href={link} target="_blank" className="link">
 						Live
 						<BiLink />
 					</a>
@@ -33,7 +29,9 @@ function Project({ projectName, projectDesc, tags, img, github, link }) {
 			</div>
 
 			<div className="project-image">
-				<div className="img"><img src={img} alt="project-img" /></div>
+				<div className="img">
+					<img src={img} alt="project-img" />
+				</div>
 			</div>
 		</div>
 	)
