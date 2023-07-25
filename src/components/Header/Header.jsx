@@ -1,6 +1,6 @@
 import "./Header.scss"
 import logo from "../../assets/logo.png"
-import profile from "../../assets/profile.jpg"
+import profile from "../../assets/pfp1.jpg"
 import resume from "../../assets/You-Kwhan Kim.pdf"
 import { useEffect } from "react"
 

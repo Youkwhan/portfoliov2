@@ -1,5 +1,5 @@
 import "./Home.scss"
-import profile from "../../assets/profile.jpg"
+import profile from "../../assets/pfp1.jpg"
 import resume from "../../assets/You-Kwhan Kim.pdf"
 import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi"
 import { AiOutlineMail } from "react-icons/ai"

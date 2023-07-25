@@ -78,7 +78,7 @@
 			font-size: 2rem;
 			gap: 1rem;
 			filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.377));
-			
+
 			& > * {
 				transition: 0.3 ease-in;
 				cursor: pointer;
@@ -111,9 +111,9 @@
 
 		img {
 			width: 100%;
-			height: 100%;
+			// height: 100%;
 			object-fit: cover;
-			transition: 0.3 ease;
+			transition: 0.3s ease;
 
 			&:hover {
 				scale: 1.02;
@@ -122,13 +122,14 @@
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 	.home {
 		flex-direction: column;
 		margin-top: 2em;
 
 		.details {
 			translate: 0 -90px;
+			padding-right: 0;
 
 			.name {
 				flex-direction: row;
@@ -155,10 +156,22 @@
 				}
 			}
 
-			.my-links{
+			.my-links {
 				margin-bottom: 1em;
 			}
 		}
+		.profile-img {
+			width: 386px;
+			translate: 0 -80px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.home {
+		flex-direction: column;
+		margin-top: 2em;
+		
 		.profile-img {
 			width: 100%;
 			translate: 0 -80px;

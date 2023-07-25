@@ -97,7 +97,8 @@
 			}
 
 			.me {
-				right: 0;
+				position: relative;
+				align-self: flex-end;
 			}
 		}
 
@@ -108,7 +109,7 @@
 				align-items: center;
 				gap: 6px;
 
-				.details{
+				.details {
 					text-align: center;
 				}
 			}
