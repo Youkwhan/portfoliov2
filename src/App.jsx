@@ -13,9 +13,10 @@ import css from "/css3-colored.svg"
 import sass from "/sass-colored.svg"
 import javascript from "/javascript-colored.svg"
 import react from "/react-colored.svg"
-import reactrouter from "/react-router-colored.svg"
-import vite from "/vite-colored.svg"
 import firebase from "/firebase-colored.svg"
+import tailwindcss from "/icons8-tailwind-css.svg"
+import typescript from "/icons8-typescript.svg"
+import figma from "/icons8-figma.svg"
 import { useEffect } from "react"
 
 function App() {
@@ -90,11 +91,12 @@ function App() {
 						<Techstack logo={html} title="HTML" />
 						<Techstack logo={css} title="CSS" />
 						<Techstack logo={javascript} title="JavaScript" />
+						<Techstack logo={typescript} title="TypeScript" />
 						<Techstack logo={react} title="React" />
-						<Techstack logo={reactrouter} title="react-router" />
+						<Techstack logo={tailwindcss} title="Tailwind Css" />
 						<Techstack logo={sass} title="Sass" />
 						<Techstack logo={firebase} title="Firebase" />
-						<Techstack logo={vite} title="Vite" />
+						<Techstack logo={figma} title="Figma" />
 					</div>
 				</div>
 
